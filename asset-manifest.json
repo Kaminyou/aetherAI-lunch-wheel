@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/aetherAI-lunch-wheel/static/css/main.58ecae7a.chunk.css",
+    "main.js": "/aetherAI-lunch-wheel/static/js/main.a048eeb1.chunk.js",
+    "main.js.map": "/aetherAI-lunch-wheel/static/js/main.a048eeb1.chunk.js.map",
+    "runtime-main.js": "/aetherAI-lunch-wheel/static/js/runtime-main.162baf97.js",
+    "runtime-main.js.map": "/aetherAI-lunch-wheel/static/js/runtime-main.162baf97.js.map",
+    "static/js/2.57ec5635.chunk.js": "/aetherAI-lunch-wheel/static/js/2.57ec5635.chunk.js",
+    "static/js/2.57ec5635.chunk.js.map": "/aetherAI-lunch-wheel/static/js/2.57ec5635.chunk.js.map",
+    "static/js/3.8e64e29a.chunk.js": "/aetherAI-lunch-wheel/static/js/3.8e64e29a.chunk.js",
+    "static/js/3.8e64e29a.chunk.js.map": "/aetherAI-lunch-wheel/static/js/3.8e64e29a.chunk.js.map",
+    "index.html": "/aetherAI-lunch-wheel/index.html",
+    "static/css/main.58ecae7a.chunk.css.map": "/aetherAI-lunch-wheel/static/css/main.58ecae7a.chunk.css.map",
+    "static/js/2.57ec5635.chunk.js.LICENSE.txt": "/aetherAI-lunch-wheel/static/js/2.57ec5635.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/aetherAI-lunch-wheel/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.162baf97.js",
+    "static/js/2.57ec5635.chunk.js",
+    "static/css/main.58ecae7a.chunk.css",
+    "static/js/main.a048eeb1.chunk.js"
+  ]
+}
