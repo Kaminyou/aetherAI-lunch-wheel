@@ -47,19 +47,21 @@ function Wheel() {
 
     return (
         candidateList.length > 0 ?(
-        <WheelComponent
-            segments={candidateList}
-            segColors={colorPalette}
-            onFinished={(winner) => onFinished(winner)}
-            primaryColor='black'
-            contrastColor='white'
-            buttonText='Spin'
-            isOnlyOnce={false}
-            size={200}
-            upDuration={100}
-            downDuration={1000}
-            fontFamily='Arial'
-            />
+        <div className='wheelwrapper'>
+            <WheelComponent
+                segments={candidateList}
+                segColors={colorPalette}
+                onFinished={(winner) => onFinished(winner)}
+                primaryColor='black'
+                contrastColor='white'
+                buttonText='Spin'
+                isOnlyOnce={false}
+                size={200}
+                upDuration={100}
+                downDuration={1000}
+                fontFamily='Arial'
+                />
+        </ div>
         ) : (<p>Error</p>)
     );
 
