@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import WheelComponent from '../components/wheel'
+import BasicMenu from '../components/manu'
 import axios from 'axios';
 
 function Wheel() {
-
     const [loadFlag, setLoadFlag] = useState(true);
     const [listName, setListName] = useState("general");
     const [listNameList, setListNameList] = useState([]);
@@ -56,11 +56,16 @@ function Wheel() {
 
     useEffect(() => {
         getCandidate();
-    }, [restaurantData]);
+        console.log(listName);
+        console.log(candidateList);
+    }, [restaurantData, listName]);
+
+    
 
     return (
         candidateList.length > 0 ?(
         <div className='wheelwrapper'>
+            {/*<BasicMenu restaurantListList={listNameList} setListName={setListName} currentListName={listName}/>*/}
             <WheelComponent
                 segments={candidateList}
                 segColors={colorPalette}
