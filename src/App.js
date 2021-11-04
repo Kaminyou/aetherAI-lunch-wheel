@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Wheel from './components/wheel'
+import Wheel from './containers/main'
 
 function App() {
   return (
