@@ -14,7 +14,7 @@ const WheelComponent = ({
     upDuration = 100,
     downDuration = 1000,
     fontFamily = 'proxima-nova'
-}) => {
+	}) => {
 	let currentSegment = ''
 	let isStarted = false
 	const [isFinished, setFinished] = useState(false)
@@ -66,7 +66,7 @@ const WheelComponent = ({
 	}
 	const onTimerTick = () => {
 		frames++
-		draw()
+		wheelDraw()
 		const duration = new Date().getTime() - spinStart
 		let progress = 0
 		let finished = false
@@ -104,12 +104,6 @@ const WheelComponent = ({
 	}
 
 	const wheelDraw = () => {
-		clear()
-		drawWheel()
-		drawNeedle()
-	}
-
-	const draw = () => {
 		clear()
 		drawWheel()
 		drawNeedle()
@@ -211,7 +205,7 @@ const WheelComponent = ({
 			width='600'
 			height='600'
 			style={{
-			pointerEvents: isFinished && isOnlyOnce ? 'none' : 'auto'
+				pointerEvents: isFinished && isOnlyOnce ? 'none' : 'auto'
 			}}
 		/>
 		</div>

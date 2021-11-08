@@ -63,7 +63,7 @@ function Wheel() {
     
 
     return (
-        candidateList.length > 0 ?(
+        (candidateList.length > 0) ?(
         <div className='wheelwrapper'>
             {/*<BasicMenu restaurantListList={listNameList} setListName={setListName} currentListName={listName}/>*/}
             <WheelComponent
