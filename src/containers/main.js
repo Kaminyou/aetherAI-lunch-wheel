@@ -57,8 +57,6 @@ function Wheel() {
     useEffect(() => {
         setCandidateList([])
         getCandidate();
-        console.log(listName);
-        console.log(candidateList);
     }, [restaurantData, listName]);
 
     

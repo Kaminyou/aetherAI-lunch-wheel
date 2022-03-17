@@ -30,6 +30,7 @@ const WheelComponent = ({
 	let frames = 0
 	const centerX = 300
 	const centerY = 300
+	
 	useEffect(() => {
 		wheelInit()
 		setTimeout(() => {
