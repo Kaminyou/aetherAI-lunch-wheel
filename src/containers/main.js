@@ -77,7 +77,7 @@ function Wheel() {
                 isOnlyOnce={false}
                 size={200}
                 upDuration={100}
-                downDuration={600}
+                downDuration={500}
                 fontFamily='Arial'
             />
         </ div>
