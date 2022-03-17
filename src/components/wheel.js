@@ -12,20 +12,20 @@ const WheelComponent = ({
     isOnlyOnce = true,
     size = 290,
     upDuration = 100,
-    downDuration = 1000,
+    downDuration = 500,
     fontFamily = 'proxima-nova'
 	}) => {
 	let currentSegment = ''
 	let isStarted = false
 	const [isFinished, setFinished] = useState(false)
 	let timerHandle = 0
-	const timerDelay = segments.length
+	let timerDelay = segments.length
 	let angleCurrent = 0
 	let angleDelta = 0
 	let canvasContext = null
 	let maxSpeed = Math.PI / `${segments.length}`
-	const upTime = segments.length * upDuration
-	const downTime = segments.length * downDuration
+	let upTime = segments.length * upDuration
+	let downTime = segments.length * downDuration
 	let spinStart = 0
 	let frames = 0
 	const centerX = 300
@@ -35,8 +35,27 @@ const WheelComponent = ({
 		setTimeout(() => {
 		window.scrollTo(0, 1)
 		}, 0)
-	}, [])
+		return () => {
+			let canvas = document.getElementById('canvas')
+			canvas.removeEventListener('click', spin);
+		}
+	}, [segments])
+
+	const resetParameter = () => {
+		currentSegment = ''
+		isStarted = false
+		setFinished(false)
+		timerHandle = 0
+		timerDelay = segments.length
+		canvasContext = null
+		maxSpeed = Math.PI / `${segments.length}`
+		upTime = segments.length * upDuration
+		downTime = segments.length * downDuration
+		spinStart = 0
+		frames = 0
+	}
 	const wheelInit = () => {
+		resetParameter()
 		initCanvas()
 		wheelDraw()
 	}

@@ -55,6 +55,7 @@ function Wheel() {
     }, []);
 
     useEffect(() => {
+        setCandidateList([])
         getCandidate();
         console.log(listName);
         console.log(candidateList);
@@ -65,7 +66,7 @@ function Wheel() {
     return (
         (candidateList.length > 0) ?(
         <div className='wheelwrapper'>
-            {/*<BasicMenu restaurantListList={listNameList} setListName={setListName} currentListName={listName}/>*/}
+            <BasicMenu restaurantListList={listNameList} setListName={setListName} currentListName={listName}/>
             <WheelComponent
                 segments={candidateList}
                 segColors={colorPalette}
